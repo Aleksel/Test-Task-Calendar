@@ -1,0 +1,304 @@
+html, body{
+    margin:0;
+}
+#conteiner{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 803px;
+}
+#buttons_top{
+    float: left;
+    margin: 56px 0 0 50px;
+}
+#buttons_top button{
+    padding: 5px 11px 6px 11px;
+    border: none;
+    background: #0271c7;
+    color: #fff;
+    text-shadow: 0px 1px 3px black;
+    box-shadow: 0px 1px 3px 1px lightgray;
+    -webkit-box-shadow: 0px 1px 3px 1px lightgray;
+    -moz-box-shadow: 0px 1px 3px 1px lightgray;
+    -o-box-shadow: 0px 1px 3px 1px lightgray;
+    border-radius: 2px;
+    font: 12px Arial;
+}
+#buttons_top button:active{
+    color: #c2d0e2;
+    background: #015da4;
+    box-shadow:inset 0px 1px 3px 1px black;
+    -webkit-box-shadow: inset 0px 1px 3px 1px black;
+    -moz-box-shadow: inset 0px 1px 3px 1px black;
+    -o-box-shadow: inset 0px 1px 3px 1px black;
+}
+#buttons_top button:first-child{
+    margin-right: 10px;
+}
+#header{
+    width: 100%;
+    height: 110px;
+    overflow:hidden;
+}
+#header_content{
+    width: 100%;
+    height: 103px;
+    background: #f4f4f4;
+    box-shadow: 0px 3px 15px 1px lightgray;
+    -webkit-box-shadow: 0px 3px 15px 1px lightgray;
+    -moz-box-shadow: 0px 3px 15px 1px lightgray;
+    -o-box-shadow: 0px 3px 15px 1px lightgray;
+}
+#search{
+    margin: 58px 50px 0 0;
+    float: right;
+}
+#search input{
+    width: 198px;
+    height: 22px;
+}
+#popup input{
+    margin-bottom: 5px;
+    width: 255px;
+    height: 22px;
+}
+#description{
+    margin-top: 32px;
+    height: 110px;
+    width: 251px;
+}
+#addEvent input{
+    height: 22px;
+    width: 256px;
+    margin: 24px 5px 8px 21px !important;
+}
+#search input, #popup input, #description, #addEvent input{
+    margin-left: 8px;
+    text-indent: 7px;
+    color: gray;
+    border-radius: 2px;
+    font: 12px Arial;
+    border: 1px solid #ddd;
+    box-shadow:inset 0px 1px 2px 1px #d0d0d0;
+    -webkit-box-shadow:inset 0px 1px 2px 1px #d0d0d0;
+    -moz-box-shadow: inset 0px 1px 2px 1px #d0d0d0;
+    -o-box-shadow: inset 0px 1px 2px 1px #d0d0d0;
+    outline: none;
+}
+#search span{
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin: 7px 0 0 0;
+    background: url(../pic/search.png) no-repeat 0 0;
+}
+#previous{
+    background: url(../pic/previous.png) no-repeat 50% 50% !important;
+}
+#next{
+    background: url(../pic/next.png) no-repeat 50% 50% !important;
+}
+#trans_months{
+    margin: 8px 0 17px 47px;
+}
+#trans_months span{
+    float: left;
+    margin: 1px 4px 0 1px;
+    font: 16px Arial;
+}
+#trans_months button{
+    float: left;
+    margin: 1px 4px;
+    min-width: 17px;
+    min-height: 17px;
+    border-radius: 3px;
+    font: 11px Arial;
+    border: 1px solid lightgrey;
+}
+#trans_months button:active{
+    box-shadow:inset 0px 1px 1px 1px gray;
+    -webkit-box-shadow: inset 0px 1px 1px 1px gray;
+    -moz-box-shadow: inset 0px 1px 1px 1px gray;
+    -o-box-shadow: inset 0px 1px 1px 1px gray;
+}
+#main_table{
+    margin: 38px 0 65px 51px;
+    border-collapse: collapse;
+    width: 900px;
+    border: 1px solid #ebebeb;
+}
+#main_table td{
+    padding: 6px 7px;
+    width: 113px;
+    height: 105px;
+    border: 1px solid #ebebeb;
+    font: 11px Arial;
+    vertical-align: baseline;
+    color: #9e9e9e;
+}
+#today{
+    background: #f4f4f4 !important;
+    font-weight: bold !important;
+    color: black !important;
+}
+#popup{
+    z-index: 1001;
+    width: 302px;
+    top:124px;
+    left: 193px;
+    max-height: 329px;display: none;
+}
+#popup, #addEvent, #showSearch{
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 15px 1px #ccc;
+    -webkit-box-shadow: 0px 3px 15px 1px #ccc;
+    -moz-box-shadow: 0px 3px 15px 1px #ccc;
+    -o-box-shadow: 0px 3px 15px 1px #ccc;
+    /*display: none;*/
+}
+#showSearch{
+    top: 99px;
+    right: 33px;
+    width: 213px;
+}
+#addEvent{
+    left: 51px;
+    width: 302px;
+    top: 99px;
+    height: 102px;display: none;
+}
+#inputText{
+    margin: 23px 10px 0px 13px;
+}
+#buttons_popup{
+    margin-left: 18px;
+    margin-top: 14px;
+}
+#buttons_popup button{
+    font-size: 12px;
+}
+#wrapper, .wrapper{
+    position: absolute;
+    overflow: hidden;
+}
+#wrapper{
+    width: 20px;
+    height: 60px;
+    top: 9px;
+    left: -20px;
+}
+.wrapper{
+    width: 60px;
+    height: 20px;
+    top: -20px;
+    left: 0px;
+}
+#arrow, .arrow{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFF;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0px 3px 10px 1px #ccc;
+    -moz-box-shadow: 0px 3px 10px 1px #ccc;
+    -o-box-shadow: 0px 3px 10px 1px #ccc;
+    box-shadow: 0px 3px 10px 1px #ccc;
+    border: 1px solid #ccc;
+}
+#arrow{
+    top: 19px;
+    left: 13px;
+}
+.arrow{
+    top: 14px;
+    left: 18px;
+}
+.close_popup{
+    position: absolute;
+    right: 11px;
+    top: 12px;
+    background: url(../pic/close.png) no-repeat 100% 0;
+    width: 15px;
+    height: 15px;
+}
+td div{
+    width: 113px;
+    max-height: 42px;
+    overflow: hidden;
+}
+td div{
+    margin-top: 5px;
+    font-size: 11px;
+    color: gray;
+}
+td div:first-child{
+    font-weight: bold;
+}
+.event{
+    background: #C1E4FF;
+}
+#showInfo{
+    padding: 20px 0px 10px 25px;
+    width: 251px;
+    max-height: 290px;
+    overflow: hidden;
+    display: none;
+}
+#showDiv1{
+    max-height:60px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#showDiv2{
+    max-height:30px;
+    margin: 18px 0 15px 0;
+    font-size: 18px;
+}
+#showDiv3{
+    max-height: 60px;
+}
+#showDiv4{
+    max-height:140px;
+    margin: 8px 0 10px 0;
+}
+#addEvent button{
+    margin-left: 20px;
+}
+#showSearch{
+    min-height: 43px;
+    max-height: 381px;
+    display: none;
+}
+#showSearchInner{
+    margin: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 370px;
+}
+.select{
+    background: #27a1ff !important;
+    color: #fff !important;
+}
+.oneEvent{
+    padding-bottom: 3px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+.showSearchEvent{
+    padding: 4px 4px 0 7px;
+    font: 13px Arial;
+    height: 20px;
+    width: 377px;
+    color: #000;
+    font-weight: bold;
+}
+.showSearchDate{
+    padding: 0 4px 4px 7px;
+    font: 11px Arial;
+    color: #9e9e9e;
+}
