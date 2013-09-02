@@ -13,7 +13,7 @@ searchField[0].onblur = function() {
     //При снятии фокуса с поля скрываем результаты поиска
     setTimeout(function() {
 	showSearch.style.display = 'none';
-    }, 200);
+    }, 300);
 
     //Обнуляем полученный из localStorage массив
     localStorageArray = [];

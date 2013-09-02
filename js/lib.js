@@ -202,7 +202,8 @@ function mouseOutCell() {
 function mainTableOnClick(event, flag) {
 
     //Если отображено окно быстрого ввода события, выходим
-    if ('block' === addEvent.style.display)
+    if (('block' === addEvent.style.display) ||
+	    ('block' === showSearch.style.display))
 	return;
 
     textBeforError = [];
