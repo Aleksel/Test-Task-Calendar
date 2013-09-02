@@ -201,7 +201,7 @@ function mouseOutCell() {
 //окно без возможности редактирования
 function mainTableOnClick(event, flag) {
 
-    //Если отображено окно быстрого ввода события, выходим
+    //Если отображено окно быстрого ввода события или поиска, выходим
     if (('block' === addEvent.style.display) ||
 	    ('block' === showSearch.style.display))
 	return;
