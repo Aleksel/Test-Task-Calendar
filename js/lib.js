@@ -447,6 +447,10 @@ function showResultInput() {
 
 //При наведении на общий div всех результатов
 showSearch.onmouseover = function() {
+
+    if ('block' === popup.style.display)
+	popup.style.display = 'none';
+
     addEvents2();
 };
 
